@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    font-family: Arial, Times New Roman;
+    font-size: 14px;   
+    line-height: 20px;
+}
+/* Divided into 3 main Sections 1) HEADER 2) SECTION 3) FOOTER: */
+.header img{
+    height:50px;
+}
+
+.navbar-header{
+    
+}
