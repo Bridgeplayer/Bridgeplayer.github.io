@@ -1,14 +1,111 @@
+
+/*
+li{
+    display: block;
+}
+
+.glyphicon{
+  float: left;
+}
+span {
+  padding-left: 30px;
+  display:block;        to make span a block element
+}
+*/
+
 body{
     margin: 0;
     font-family: Arial, Times New Roman;
     font-size: 14px;   
     line-height: 20px;
 }
+
 /* Divided into 3 main Sections 1) HEADER 2) SECTION 3) FOOTER: */
 .header img{
-    height:50px;
+    height:150px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.navbar-header{
-    
+/* Using flex to solve only child-parent height
+div.header{
+    margin-left:-15px;
+    display: ms-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+*/
+
+/* Without flex, use display:inline with negative margin hack NEED OVERFLOW as well, can also solve bottom&top element widths */
+
+div.header{
+    margin-left:-15px;
+    overflow: hidden;
+}
+
+div.header>div>div{
+    padding-bottom: 999px;
+    margin-bottom: -999px;
+}
+
+.navbar{
+    height: 100%;
+}
+
+.main-section {
+    height:100%;
+    display: table;
+    background-color:#0DBEFF;
+}
+
+.main-section .container .main-home p{
+    font-size: 50px;
+}
+.container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* home */
+.container .jumbotron p{
+    font-size: 50px
+}
+
+
+/* My contact details */
+table{
+    font-size: 25px;
+}
+table tr td{
+    padding: 0 15px 5px;
+}
+
+.main-section{
+    font-size: 30px;
+}
+
+/* for HOME */
+img.home{
+   height: 700px;
+    width: 800px;
+}
+
+.footer{
+    background-color: coral;
+}
+
+.footer p{
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 40px;
+}
+
+form{
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.social-icons{
+    background-color: aqua
 }
